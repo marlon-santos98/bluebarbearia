@@ -1,0 +1,553 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
+}
+body{
+    font-family: 'roboto', sans-serif;
+    overflow-x: hidden;
+}
+body:has(.btn-topo) .btn-topo {
+    display: block;
+}
+/*estilização header*/
+.header-section{
+    min-height: 100vh;
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    flex-shrink: 1;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    justify-content: center;
+}
+.header-section::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw; /* ou use vw se necessário */
+    height: 100vh; /* ou use vh se necessário */
+    background: #ccc; /* Exemplo */
+    z-index: -1; /* Mantém o background atrás do texto */
+}
+.content-header{
+    position: absolute;
+    display: flex;
+    top: 20px;
+    width: 100%;
+    justify-content: center;
+}
+.content-header-2{
+    position: absolute;
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    top: 50%;
+    transform: translateY(-50%); /* centraliza verticalmente */
+    font-size: 40px;
+    font-weight: 800;
+    text-shadow: 2px 2px 5px  #000000;
+    text-transform: uppercase;
+    opacity: 0.8;
+}
+.header-section a{
+    text-decoration: none;
+    color: white;
+    margin-right: 20px;
+    font-size: 20px;
+    font-weight: 700;
+    z-index: 100;
+}
+.h1{
+    display: flex;
+    align-items: center;
+}
+.h1::before{
+    content: "";
+    background-image: url("img/logo-removebg-preview (1).png");
+    background-color: white;
+    width: 95px;
+    height: 95px;
+    border-radius: 189px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    margin: 0 18px 0 0;
+}
+.header-section h1{
+    margin-right: 250px;
+    color: white;
+    font-family: 'Rye';
+    font-size: 50px;
+    font-weight: 200;
+}
+nav{
+    display: flex;
+    align-items: center;
+}
+/*icone wp*/
+.wp img{
+    position: fixed;
+    object-fit: fill;
+    width: 80px;
+    height: 80px;
+    right: 10px;
+    bottom: 90px;
+}
+/*section one*/
+.sct-1{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex: 1;
+    width: 100%;
+    height: auto;
+    background-color: #013954;
+    padding: 150px 100px;
+}
+.sct-1 img{
+    width: 100%;
+    height: 500px;
+    object-fit: fill;
+    border-radius: 10px;
+}
+.content-sct-1{
+    width: 30%;
+    margin-left: 50px;
+    font-size: 30px;
+    color: white;
+}
+.content-sct-1 h3{
+    font-family: 'Rye', sans-serif;
+    font-size: 60px;
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: 500;
+}
+/*section two*/
+.sct-2{
+    display: flex;
+    height: auto;
+    width: 100%;
+    justify-content: center;
+}
+.sct-2 img{
+    margin: 50px;
+    width: 590px;
+    height: 590px;
+    object-fit: fill;
+}
+.content-sct-2{
+    margin: 50px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.style-sct2{
+    display: flex;
+    background-color: rgb(244, 242, 240);
+    width: 80%;
+    margin: 80px 0 50px 0;
+    box-shadow: 1px 1px 10px 10px rgb(217, 210, 210);
+    border-radius: 1%;
+}
+.content-sct-2 h3{
+    font-size: 2.8rem;
+    text-align: center;
+    margin: 5% 0 10%;
+    font-family: 'Rye', sans-serif;
+    font-weight: 100;
+    color: #B73735;
+
+}
+.sct-2-price span{
+    display: inline;
+    width: 100%;
+}
+.linha-com-texto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+.linha-com-texto span{
+    margin: 0 10px;
+}
+.linha{
+    flex-grow: 1;
+    height: 2px;
+    background-color: #000000;
+    width: 100%;
+}
+.sct-2-price{
+    align-items: center;
+    font-family: 'sans-serif';
+    font-weight: 800;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+/*section three*/
+.sct-3{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: 1;
+    flex-grow: 1;
+    height: auto;
+    align-items: center;
+    background-color: #013954;
+    margin-top: 100px;
+
+}
+.sct-3 h3{
+    font-family: 'Rye', sans-serif;
+    font-size: 3.5rem;
+    color: white;
+    margin: 50px 0px 0px 0px;
+    font-weight: 200;
+    display: flex;
+    justify-content: center;
+}
+.sct-3 p{
+    color: white;
+    font-size: 1.5rem;
+    margin: 20px 0px 90px 0px;
+}
+
+.sct-3 img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20%;
+    opacity: 0.9;
+}
+.sct-3 img:hover{
+    opacity: 1;
+    transition: 500ms;
+}
+figcaption{
+    color: white;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.3rem;
+
+}
+.img-sct-3{
+    display: flex;
+    gap: 20px;
+    flex: 1;
+    flex-wrap: wrap;
+    width: 60%;
+    justify-content: space-evenly;
+    margin: 0 0 90px 0;
+}
+/*section 4*/
+.sct-4{
+    width: 100%;
+    height: 100%;
+    margin: 150px 0px;
+}
+.sct-4 h2{
+    font-family: 'Rye', sans-serif;
+    font-size: 3.5rem;
+    color:#B73735;
+    margin: 50px 0px 0px 0px;
+    font-weight: 200;
+    display: flex;
+    justify-content: center;
+}
+.sct-4-cnt{
+    text-align: center;
+    margin-bottom: 150px;
+}
+.cards{
+    display: flex;
+    justify-content: center;
+    flex-shrink: 1;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    gap: 90px;
+}
+.card{
+    background-color: #013954;
+    color: white;
+    padding: 40px;
+    height: auto;
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px 1px #B73735;
+    margin: 20px 0 20px 0;
+}
+.card h4{
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.card .card-preco{
+    text-align: center;
+}
+.card-preco-1{
+    font-size: 2.6rem;
+    text-align: center;
+    font-weight: 700;
+}
+.mensal{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.beneficios{
+    margin: 40px 0px;
+}
+.beneficios p{
+    margin: 10px 0 20px 0;
+    display: flex;
+}
+.beneficios p::before{
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-image: url("img/check_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg");
+    font-size: inherit;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+.corte-ilimitado{
+    display: flex;
+    align-items:end;
+}
+.beneficios .corte-ilimitado::before{
+    content: "";
+    background-image: url("img/minimize_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg");
+    vertical-align: middle;
+    font-size: inherit;
+    width: 20px;
+    height: 30px;
+}
+.barba-ilimitada{
+    display: flex;
+    align-items: flex-end;
+}
+.beneficios .barba-ilimitada::before{
+    content: "";
+    background-image: url("img/minimize_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg");
+    vertical-align: middle;
+    font-size: inherit;
+    width: 20px;
+    height: 30px;
+}
+.assinar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card a{
+    background-color: #B73735;
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 30px;
+    width: 60%;
+    text-align: center;
+    
+}
+.card a:hover{
+    background-color: white;
+    color: black;
+    transition: 600ms;
+}
+/*section five*/
+.sct-5{
+    width: 100%;
+    background-color: #013954;
+    display: flex;
+    flex-direction: column;
+}
+.sct-5 h3{
+    text-align: center;
+    font-family: 'Rye', sans-serif;
+    font-size: 3.5rem;
+    color: white;
+    margin: 50px 0px 0px 0px;
+    font-weight: 200;
+}
+iframe{
+    width: 900px;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-shrink: 1;
+    flex-grow: 1;
+}
+.imagem-footer img{
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 20px;
+}
+/*footer*/
+footer{
+    background-color: #B73735;
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.footer{
+    padding: 90px 50px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+}
+.logo-rp{
+    width: 100px;
+    margin: 20px;
+    border-radius: 150px;
+    box-shadow: 1px 1px 10px 5px white;
+}
+.icon{
+    display: flex;
+    align-items: center;
+}
+.icon figure{
+    margin-left: 15px;
+}
+.social{
+    width: 70px;
+}
+.review{
+    width: 200px;
+}
+.logo-rodape{
+    background-color: aliceblue;
+    border-radius: 150px;
+}
+.horario{
+    color: white;
+    font-size: 1.3rem;
+    text-align: center;
+}
+.horario p{
+    padding: 5px;
+}
+.horario a{
+    text-decoration: none;
+    color: white;
+}
+.btn-topo{
+    display: none; /* Oculto por padrão */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 24px;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    text-align: center;
+    text-decoration: none;
+    transition: opacity 0.3s;
+}
+.btn-topo:hover {
+    background-color: #555;
+}
+
+/*responsividade*/
+
+@media(min-width:300px) and (max-width: 480px){
+    /*header*/
+    .content-header h1{
+        margin: 0px;
+        font-size: 1.2rem;
+    }
+    .h1::before{
+        width: 50px;
+        height: 50px;
+    }
+    .header-section::before{
+        display: none;
+    }
+    .content-header nav a{
+        font-size: 1rem;
+        display: none;
+    }
+    .header-section{
+        height: 300px;
+    }
+    .content-header-2{
+        font-size: 1rem;
+        text-align: center;
+        padding: 30px;
+    }
+    video{
+        height: 100%;
+        
+    }
+    /*section 2*/
+    .sct-1{
+        display: flex;
+        width: 100%;
+        padding: 0;
+    }
+    .sct-1 img{
+        margin-top: 50px;
+        padding: 40px;
+    }
+    .content-sct-1{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .content-sct-1 p{
+        font-size: 1.2rem;
+        padding: 0 20px 20px 20px;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .sct-1 h3{
+        font-size: 2.3rem;
+        text-align: center;
+        justify-content: center;
+        padding: 10px 10px 0px 10px;
+        margin-bottom: 20px;
+    }
+    /*sct 2*/
+    .sct-2{
+        width: 100%;
+        padding: 20px;
+    }
+    .style-sct2 img{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 30px;
+        border-radius: 40px;
+    }
+    .style-sct2{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .content-sct-2{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .content-sct-2 h3{
+        font-size: 2rem;
+        margin: 0;
+    }
+    .sct-2-price{
+        font-size: 0.9rem;
+        margin-bottom: 30px;
+        padding: 5px;
+    }
+    /*sct 3*/
+}
