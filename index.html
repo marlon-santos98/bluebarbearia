@@ -10,6 +10,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rye&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <title>Blue Barbearia</title>
 </head>
 
@@ -18,8 +19,8 @@
         <div class="content-header">
             <h1 class="h1">Blue Barbearia</h1>
             <a id="topo"></a>
-            <nav>
-                <a href="#quemsoos">QUEM SOMOS</a>
+            <nav class="nav">
+                <a href="#quemsomos">QUEM SOMOS</a>
                 <a href="#servicos">SERVIÇOS</a>
                 <a href="#precos">PREÇOS</a>
                 <a href="#assinatura">CLUBE DE ASSINATURA</a>
@@ -27,7 +28,7 @@
             </nav>
         </div>
         <div class="content-header-2">
-            <p class="w3-center w3-animate-top">Muito mais que Barba, Cabelo e Bigode é um estilo de vida </p>
+            <p>Muito mais que Barba, Cabelo e Bigode é um estilo de vida </p>
         </div>
         <video src="videos/video.mp4" autoplay loop muted></video>
     </header>
@@ -39,7 +40,7 @@
             </figure>
         </section>
         <section class="sct-1">
-            <div>
+            <div class="ft-1">
                 <figure>
                     <img src="img/ft-2.jpg" alt="Foto Barbearia">
                 </figure>
@@ -95,7 +96,7 @@
                     <figcaption>SOBRANCELHA</figcaption>
                 </figure>
                 <figure>
-                    <img src="img/corte.jpg" alt="corte">
+                    <img src="img/corte.jpg" alt="corte" class="corte-ft">
                     <figcaption>CORTE</figcaption>
                 </figure>
             </div>
@@ -172,25 +173,28 @@
             </div>
             <div class="horario">
                 <p>Rua Carlos Dietzsch, Rua Carlos Dietchz, 1361 - Portão, Curitiba - PR</p>
-                <p>Horário de funcionamento: Segunda-Feira a Sábado 10:00 às 19:00</p>
-                <p><a href="tel:+554196640448">Telefone: (41) 99664-0448</a></p>
+                <p>Horário de funcionamento: Segunda-Feira à Sábado 10:00 às 19:00</p>
+                <p><a href="tel:+554196640448" target="_blank">Telefone: (41) 99664-0448</a></p>
             </div>
             <div class="icon">
                 <figure>
-                    <a
-                        href="https://www.google.com/search?q=blue+barbearia&oq=blue+barbearia&gs_lcrp=EgZjaHJvbWUqDggAEEUYJxg7GIAEGIoFMg4IABBFGCcYOxiABBiKBTIGCAEQRRhAMhIIAhAuGEMYrwEYxwEYgAQYigUyCAgDEAAYFhgeMggIBBAAGBYYHjIICAUQABgWGB4yBggGEEUYPTIGCAcQRRg90gEINTQ1NmowajeoAgCwAgA&sourceid=chrome&ie=UTF-8#lrd=0x94dce30bde58d55d:0xe759c2860de5efce,1,,,,"><img
-                            src="img/avaliações-removebg-preview.png" alt="reviews" class="review"></a>
+                    <a href="https://www.google.com/search?q=blue+barbearia&oq=blue+barbearia&gs_lcrp=EgZjaHJvbWUqDggAEEUYJxg7GIAEGIoFMg4IABBFGCcYOxiABBiKBTIGCAEQRRhAMhIIAhAuGEMYrwEYxwEYgAQYigUyCAgDEAAYFhgeMggIBBAAGBYYHjIICAUQABgWGB4yBggGEEUYPTIGCAcQRRg90gEINTQ1NmowajeoAgCwAgA&sourceid=chrome&ie=UTF-8#lrd=0x94dce30bde58d55d:0xe759c2860de5efce,1,,,,"
+                        target="_blank"><img src="img/avaliações-removebg-preview.png" alt="reviews" class="review"></a>
                 </figure>
                 <figure>
-                    <a
-                        href="https://l.instagram.com/?u=https%3A%2F%2Fwww.facebook.com%2Fbluebarbearia%2F&e=AT0d1QbueiNQmaEPJsfNpmRqyK5NpYiPGtTXpuaol9j2ejo_cmIgaTBoGxL5d8FTuqMBNkf6FBogVHYAqsxYqns9IqU-oHKnSCH2f3obV2hFN4j-4M8Jr8M"><img
-                            src="img/facebook.svg" alt="facebook" class="social"></a>
+                    <a href="https://l.instagram.com/?u=https%3A%2F%2Fwww.facebook.com%2Fbluebarbearia%2F&e=AT0d1QbueiNQmaEPJsfNpmRqyK5NpYiPGtTXpuaol9j2ejo_cmIgaTBoGxL5d8FTuqMBNkf6FBogVHYAqsxYqns9IqU-oHKnSCH2f3obV2hFN4j-4M8Jr8M"
+                        target="_blank"><img src="img/facebook.svg" alt="facebook" class="social"></a>
                 </figure>
                 <figure>
-                    <a href="https://www.instagram.com/blue.barbearia/"><img src="img/instagram.svg" alt="instagram"
-                            class="social"></a>
+                    <a href="https://www.instagram.com/blue.barbearia/" target="_blank"><img src="img/instagram.svg"
+                            alt="instagram" class="social"></a>
                 </figure>
             </div>
+        </div>
+        <div class="developer">
+            <a href="https://www.linkedin.com/in/marlon-adriano-teixeira-dos-santos-558573321/" target="_blank">
+                <p>Desenvolvido por Marlon Santos</p>
+            </a>
         </div>
     </footer>
 </body>

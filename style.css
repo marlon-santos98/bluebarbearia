@@ -13,6 +13,11 @@ body:has(.btn-topo) .btn-topo {
     display: block;
 }
 /*estilização header*/
+a{
+    pointer-events: auto;
+    position: relative;
+    z-index: 10;
+}
 .header-section{
     min-height: 100vh;
     overflow: hidden;
@@ -58,13 +63,19 @@ body:has(.btn-topo) .btn-topo {
     text-transform: uppercase;
     opacity: 0.8;
 }
-.header-section a{
+.nav a{
     text-decoration: none;
     color: white;
     margin-right: 20px;
     font-size: 20px;
-    font-weight: 700;
+    font-weight: 600;
     z-index: 100;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        margin-top: 45px;
 }
 .h1{
     display: flex;
@@ -89,10 +100,6 @@ body:has(.btn-topo) .btn-topo {
     font-size: 50px;
     font-weight: 200;
 }
-nav{
-    display: flex;
-    align-items: center;
-}
 /*icone wp*/
 .wp img{
     position: fixed;
@@ -112,6 +119,7 @@ nav{
     height: auto;
     background-color: #013954;
     padding: 150px 100px;
+    margin: -60px 0 0 0;
 }
 .sct-1 img{
     width: 100%;
@@ -242,7 +250,6 @@ figcaption{
 }
 .img-sct-3{
     display: flex;
-    gap: 20px;
     flex: 1;
     flex-wrap: wrap;
     width: 60%;
@@ -399,6 +406,7 @@ footer{
     width: 100%;
     display: flex;
     justify-content: space-around;
+    flex-direction: column;
 }
 .footer{
     padding: 90px 50px;
@@ -459,6 +467,18 @@ footer{
 .btn-topo:hover {
     background-color: #555;
 }
+.developer{
+    background-color: #000000;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    padding: 10px;
+    font-weight: none;
+}
+.developer a{
+    text-decoration: none;
+    color: white;
+}
 
 /*responsividade*/
 
@@ -496,10 +516,16 @@ footer{
         display: flex;
         width: 100%;
         padding: 0;
+        margin: -16px 0 0 0;
     }
     .sct-1 img{
         margin-top: 50px;
-        padding: 40px;
+        padding: 0px;
+        width: 100%;
+        height: 300px;
+    }
+    .ft-1{
+        margin: 0;
     }
     .content-sct-1{
         width: 100%;
@@ -526,14 +552,14 @@ footer{
     .style-sct2 img{
         width: 100%;
         height: 100%;
-        margin: 0;
-        padding: 30px;
-        border-radius: 40px;
+        margin: 0px;
+        border-radius: 10px;
     }
     .style-sct2{
         width: 100%;
         display: flex;
         flex-direction: column;
+        margin: 0;
     }
     .content-sct-2{
         width: 100%;
@@ -550,4 +576,310 @@ footer{
         padding: 5px;
     }
     /*sct 3*/
+    .sct-3{
+        margin: 0;
+    }
+    .img-sct-3{
+        width: 100%;
+    }
+    .img-sct-3 img{
+        width: 200px;
+        object-fit: cover;
+        height: 200px;
+    }
+    .sct-3 h3{
+        font-size: 2.3rem;
+        padding: 10px;
+    }
+    .sct-3 p{
+        text-align: center;
+        font-size: 1rem;
+        margin: 0 0 30px 0;
+        padding: 10px;
+    }
+    .img-sct-3 .corte-ft{
+        width: 200px;
+    }
+    /*sct-4*/
+    .sct-4{
+        margin: 30px 0 0 0;
+        width: 100%;
+        padding: 20px;
+    }
+    .sct-4-cnt h2{
+        width: 100%;
+        font-size: 2rem;
+        margin: 0;
+    }
+    .sct-4-cnt{
+        margin: 0 0 30px 0;
+    }
+    .card{
+        margin: 0;
+    }
+    .cards{
+        gap: 15px;
+        padding: 10px;
+    }
+    /*sct 5*/
+    .sct-5{
+        width: 100%;
+    }
+    .sct-5 h3{
+        font-size: 2rem;
+        padding: 10px;
+    }
+    iframe{
+        width: 100%;
+        padding: 5px;
+        height: 200px;
+        border-radius: 10px;
+    }
+    .footer{
+        flex-direction: column;
+        display: flex;
+        padding: 20px;
+    }
+    .footer p{
+        font-size: 1rem;
+    }
+    .footer img{
+        width: 100%;
+    }
+    .footer .logo-rp{
+        width: 100px;
+    }
+    /*wp fixed*/
+    .wp img{
+        width: 50px;
+        opacity: 0.9;
+    }
+    .btn-topo{
+        right: 8px;
+    }
+    .social{
+        height: 100px;
+    }
+}
+@media(min-width: 481px) and (max-width: 768px){
+    .header-section{
+        height: 200px;
+    }
+    .content-header h1{
+        width: 100%;
+        margin: 0;
+        font-size: 2rem;
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+    }
+    .nav{
+    display: none;
+    }
+    .content-header-2 p{
+        width: 100%;
+        font-size: 2rem;
+        justify-content: center;
+        display: flex;
+        text-align: center;
+    }
+    /*sct-1*/
+    .sct-1{
+        width: 100%;
+        padding: 0;
+        margin-top: -15px;
+    }
+    .content-sct-1{
+        width: 100%;
+        margin: 0;
+    }
+    .content-sct-1 h3{
+        font-size: 2.5rem;
+    }
+    .content-sct-1 p{
+        font-size: 1.8rem;
+        text-align: center;
+        margin-bottom: 40px;
+        padding: 20px;
+    }
+    /*sct2*/
+    .style-sct2{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .sct-2 img{
+        width: 100%;
+        margin: 0;
+        height: 300px;
+        object-fit: fill;
+    }
+    .sct-2{
+        padding: 30px;
+    }
+    .sct-2 figure{
+        margin: 0;
+    }
+    .sct-2-price{
+        width: 100%;
+    }
+    .content-sct-2{
+        margin: 0 0 50px 0;
+    }
+    /*sct 3*/
+    .sct-3{
+        margin: 0;
+    }
+    .sct-3 figure{
+        margin: 0;
+    }
+    .sct-3 figcaption{
+        margin-bottom: 20px;
+    }
+    .img-sct-3{
+        margin: 0;
+    }
+    /*sct 4*/
+    .sct-4{
+        margin: 30px 0 80px 0;
+    }
+    .sct-4-cnt{
+        margin: 0 0 30px 0;
+    }
+    .cards{
+        gap: 0;
+    }
+    /*sct 5*/
+    .sct-5 h3{
+        font-size: 2.5rem;
+    }
+    iframe{
+        width: 100%;
+        height: 300px;
+        padding: 10px;
+    }
+    /*footer*/
+    .footer{
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        width: 100%;
+    }
+}
+@media (min-width: 769px) and (max-width: 1279px){
+    .content-header{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .content-header h1{
+        margin: 0;
+        justify-content: center;
+    }
+    .nav a{
+        font-size: 1rem;
+    }
+    .nav{
+        padding: 10px;
+    }
+    .content-header-2{
+        width: 100%;
+        font-size: 2.3rem;
+        text-align: center;
+        padding: 20px;
+    }
+    .sct-1{
+        width: 100%;
+    }
+    .sct-1 figure{
+        margin: 0;
+    }
+    .ft-1{
+        width: 100%;
+    }
+    .ft-1 img{
+        object-fit: contain;
+    }
+    .content-sct-1{
+        width: 100%;
+        margin: 0;
+        text-align: center;
+        padding: 10px;
+    }
+    .sct-2{
+        width: 100%;
+        padding: 20px;
+    }
+    .style-sct2{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+    .style-sct2 img{
+        width: 100%;
+        margin: 0;
+    }
+    .content-sct-2{
+        width: 100%;
+        margin: 0 0 50px 0;
+    }
+    .footer{
+        padding: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+    }
+}
+@media (min-width: 1280px){
+    .content-header{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .content-header h1{
+        margin: 0;
+        justify-content: center;
+    }
+    .nav a{
+        font-size: 1rem;
+    }
+    .nav{
+        padding: 10px;
+    }
+    .content-header-2{
+        width: 100%;
+        font-size: 2.3rem;
+        text-align: center;
+        padding: 20px;
+    }
+    .sct-1{
+        display: flex;
+        width: 100%;
+        align-items: center;   
+    }
+    .content-sct-2{
+        margin: 0;
+        width: 100%;
+    }
+    .style-sct2 figure{
+        margin: 0;
+    }
+    .style-sct2 img{
+        margin: 0;
+        padding: 20px;
+        border-radius: 40px;
+    }
+    .img-sct-3{
+        width: 100%;
+    }
+    .cards{
+    width: 100;
+    }
+    .card{
+        width: 350px;
+    }
 }
