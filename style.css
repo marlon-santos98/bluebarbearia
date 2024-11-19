@@ -509,7 +509,6 @@ footer{
     }
     video{
         height: 100%;
-        
     }
     /*section 2*/
     .sct-1{
@@ -667,7 +666,7 @@ footer{
         height: 200px;
     }
     video{
-        height: 100%;
+        height: 1500px;
     }
     .content-header h1{
         width: 100%;
@@ -682,10 +681,12 @@ footer{
     }
     .content-header-2 p{
         width: 100%;
-        font-size: 2rem;
+        font-size: 1.7rem;
         justify-content: center;
         display: flex;
         text-align: center;
+        padding: 10px;
+        margin-top: 90px;
     }
     /*sct-1*/
     .sct-1{
@@ -778,7 +779,7 @@ footer{
         text-align: center;
     }
     video{
-        height: 1500px;
+        height: 2400px;
     }
     .content-header h1{
         margin: 0;
@@ -851,7 +852,7 @@ footer{
         text-align: center;
     }
     video{
-        width: 100%;
+        height: 1700px;
     }
     .content-header h1{
         margin: 0;
