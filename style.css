@@ -130,7 +130,7 @@ nav{
 .content-sct-1{
     width: 30%;
     margin-left: 50px;
-    font-size: 30px;
+    font-size: 2rem;
     color: white;
 }
 .content-sct-1 h3{
@@ -656,6 +656,7 @@ footer{
     }
     .btn-topo{
         right: 8px;
+        padding: 3px;
     }
     .social{
         height: 100px;
@@ -664,6 +665,9 @@ footer{
 @media(min-width: 481px) and (max-width: 768px){
     .header-section{
         height: 200px;
+    }
+    video{
+        height: 100%;
     }
     .content-header h1{
         width: 100%;
@@ -773,6 +777,9 @@ footer{
         flex-direction: column;
         text-align: center;
     }
+    video{
+        height: 1500px;
+    }
     .content-header h1{
         margin: 0;
         justify-content: center;
@@ -831,6 +838,9 @@ footer{
         display: flex;
         flex-direction: column;
         padding: 30px;
+    }
+    .btn-topo{
+        padding: 5px;
     }
 }
 @media (min-width: 1280px){
