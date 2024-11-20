@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <!-- Página inicial -->
+    <url>
+        <loc>https://bluebarbearia.shop/</loc>
+        <lastmod>2024-11-20</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <!-- Página de Serviços -->
+    <url>
+        <loc>https://bluebarbearia.shop/servicos</loc>
+        <lastmod>2024-11-20</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Página de Contato -->
+    <url>
+        <loc>https://bluebarbearia.shop/contato</loc>
+        <lastmod>2024-11-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <!-- Página Sobre Nós -->
+    <url>
+        <loc>https://bluebarbearia.shop/sobre</loc>
+        <lastmod>2024-11-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+</urlset>
