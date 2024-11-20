@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://www.bluebarbearia.shop/sitemap.xml
